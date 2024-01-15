@@ -16,9 +16,10 @@ const commentSchema = new Schema(
       type: String,
       required: true,
     },
+    //Modifying schema's author field for type of Objectid and ref or User
     author: {
-      type: String,
-      required: true,
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "User",
     },
   },
   {
