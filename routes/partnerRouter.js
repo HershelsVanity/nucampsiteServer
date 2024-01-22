@@ -1,5 +1,5 @@
 const express = require("express");
-const Partner = require("../models/partners");
+const Partner = require("../models/partner");
 const authenticate = require("../authenticate");
 const cors = require("./cors");
 
